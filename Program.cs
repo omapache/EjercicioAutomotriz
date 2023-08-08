@@ -10,6 +10,18 @@ internal class Program
         List<OrdenAprobacion> listaAprobacion = new();
         List<Factura> listaFactura = new();
 
+        List<string> km = new()
+        {
+            "998"
+        };
+        List<Vehiculo> listaVehiculos = new();
+        Vehiculo vehiculo = new("kia","2018","rojo","duw-609",km);
+        listaVehiculos.Add(vehiculo);
+        Cliente clientequemado = new ("1","owen","blanco","123123","123123",DateTime.Now,listaVehiculos);
+        listaClientes.Add(clientequemado);
+        Empleado empleadoquemado = new ("1","owen","blanco","123123","123123","mecanico");
+        listaEmpleados.Add(empleadoquemado);
+
         int nextIdOrdenServicio = 0; 
         int nextIdOrdenAprobacion = 0; 
         int nextIdOrdenFactura = 0; 
@@ -41,6 +53,9 @@ internal class Program
                                 Empleado.MostrarEmpleadoGlobal(listaEmpleados);
                                 Console.ReadKey();
                                 break;
+                            case 3:
+                                Vehiculo.ModificarKilometrajeVehiculo(listaClientes);
+                                break;
                             default:
                                 Console.WriteLine("opcion invalida");
                                 break;
@@ -48,7 +63,7 @@ internal class Program
 
                         opcionRegistro = RegistroMenu.MenuRegistrar();
 
-                    } while (opcionRegistro != 3);
+                    } while (opcionRegistro != 4);
                     break;
                 case 2:
                     int opcionConsulta = 0;

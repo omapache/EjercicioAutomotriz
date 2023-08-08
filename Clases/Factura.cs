@@ -79,7 +79,7 @@ namespace EjercicioAutomotriz.Clases;
                     if (repuesto.Estado)
                     {
                         float subTotalRepuesto = repuesto.ValorUnitario * repuesto.Cantidad;
-                        Console.WriteLine($"[{repuesto.Id,-15}] |{repuesto.Nombre,-15} | {repuesto.ValorUnitario,-18:C2} | {repuesto.Cantidad,-15} | {subTotalRepuesto,-13:C2}");
+                        Console.WriteLine($"{repuesto.Id,-14} |{repuesto.Nombre,-19} | {repuesto.ValorUnitario,-22} | {repuesto.Cantidad,-16} | {subTotalRepuesto,-14}");
                         subtotalRepuestos += subTotalRepuesto;
                     }
                 }

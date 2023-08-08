@@ -38,6 +38,7 @@ namespace EjercicioAutomotriz.Clases;
 
         public static void ModificarKilometrajeVehiculo(List<Cliente> clientes)
         {
+            Cliente.MostrarClienteGlobal(clientes);
             Console.WriteLine("Ingrese la cédula del cliente:");
             string cedulaCliente = Console.ReadLine();
 
@@ -45,6 +46,16 @@ namespace EjercicioAutomotriz.Clases;
 
             if (cliente != null)
             {
+                foreach (Vehiculo vehiculoss in cliente.Vehiculos)
+                {
+                    Console.WriteLine($"Placa: {vehiculoss.Placa}");
+                    Console.WriteLine($"Kilometraje:");
+                    foreach (string km in vehiculoss.Km)
+                    {
+                        Console.WriteLine($"- {km} km");
+                    }
+                    Console.WriteLine("-----------------------------------------------------");
+                }
                 Console.WriteLine("Ingrese la placa del vehículo:");
                 string placaVehiculo = Console.ReadLine();
 
@@ -52,7 +63,7 @@ namespace EjercicioAutomotriz.Clases;
                 if (vehiculo != null)
                 {   
                     List<string> kilometrajeAnterior = vehiculo.Km;
-                    Console.WriteLine($"Kilometraje anterior: {kilometrajeAnterior} km");
+                    Console.WriteLine($"Kilometraje anterior: {cliente.Vehiculos.Find(vehiculo => vehiculo.Placa == vehiculo.Placa)?.Km.LastOrDefault(),-13} km");
                     
                     Console.WriteLine($"Ingrese el nuevo kilometraje para el vehículo con placa {placaVehiculo}:");
                     string nuevoKm = Console.ReadLine();

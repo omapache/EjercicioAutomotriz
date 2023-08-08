@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owen\\Documents\\c#\\EjercicioAutomotriz\\EjercicioAutomotriz.csproj": {}
+    "/home/arteN01-040/Desktop/EjercicioAutomotriz/EjercicioAutomotriz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owen\\Documents\\c#\\EjercicioAutomotriz\\EjercicioAutomotriz.csproj": {
+    "/home/arteN01-040/Desktop/EjercicioAutomotriz/EjercicioAutomotriz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owen\\Documents\\c#\\EjercicioAutomotriz\\EjercicioAutomotriz.csproj",
+        "projectUniqueName": "/home/arteN01-040/Desktop/EjercicioAutomotriz/EjercicioAutomotriz.csproj",
         "projectName": "EjercicioAutomotriz",
-        "projectPath": "C:\\Users\\Owen\\Documents\\c#\\EjercicioAutomotriz\\EjercicioAutomotriz.csproj",
-        "packagesPath": "C:\\Users\\Owen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owen\\Documents\\c#\\EjercicioAutomotriz\\obj\\",
+        "projectPath": "/home/arteN01-040/Desktop/EjercicioAutomotriz/EjercicioAutomotriz.csproj",
+        "packagesPath": "/home/arteN01-040/.nuget/packages/",
+        "outputPath": "/home/arteN01-040/Desktop/EjercicioAutomotriz/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/arteN01-040/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
         }
       }
     }
